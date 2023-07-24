@@ -1,8 +1,17 @@
 nav {
-  height: 75px;
+  height: 80px;
+}
+img {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  max-width: 100px;
+}
+.navbar {
+  align-content: center;
 }
 .colorNavbar {
-  background-color: red;
+  background: rgba(187, 148, 118, 0.66);
 }
 .collapse {
   flex-direction: row-reverse;

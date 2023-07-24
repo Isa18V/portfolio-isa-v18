@@ -1,8 +1,9 @@
 import React from "react";
 import "../css/Navbar.css";
+import logoIsa from "../img/logoisa .png";
 
 let navbarArray = [
-  { img: "img here" },
+  { img: logoIsa },
   { name: "Home", link: "/" },
   { name: "About", link: "/" },
   { name: "Services", link: "/" },
@@ -11,12 +12,12 @@ let navbarArray = [
 ];
 export default function Navbar() {
   return (
-    <div className="navBar">
+    <div className="navbarContainer">
       <nav className="navbar navbar-expand-lg colorNavbar">
         <div className="container-fluid">
           {/* here needs to be my image */}
           <a className="navbar-brand" href="#">
-            {navbarArray[0].img}
+            <img src={navbarArray[0].img} alt="Logo" />
           </a>
           <button
             className="navbar-toggler"
