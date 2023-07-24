@@ -13,7 +13,7 @@ let navbarArray = [
 export default function Navbar() {
   return (
     <div className="navbarContainer">
-      <nav className="navbar navbar-expand-lg colorNavbar">
+      <nav className="navbar fixed-top navbar-expand-lg colorNavbar">
         <div className="container-fluid">
           {/* here needs to be my image */}
           <a className="navbar-brand" href="#">
