@@ -26,21 +26,23 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <nav className="navbar fixed-top navbar-expand-lg colorNavbar">
-        <div className="container-fluid">
-          <img src={logoIsa} alt="Logo" />
+        <div className="container-fluid flex-row-reverse">
+          <img className="navbar-brand" src={logoIsa} alt="Logo" />
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">{navbarItems}</ul>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <ul className="navbar-nav">{navbarItems}</ul>
+            </div>
           </div>
         </div>
       </nav>

@@ -12,12 +12,14 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <Navbar />
+      </header>
+      <div className="appContent">
         <HomePage />
         <AboutPage />
         <ServicesPage />
         <PortfolioPage />
         <ContactPage />
-      </header>
+      </div>
     </div>
   );
 }
