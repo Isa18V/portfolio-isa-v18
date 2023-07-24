@@ -1,0 +1,6 @@
+.colorNavbar {
+  background-color: red;
+}
+.collapse {
+  flex-direction: row-reverse;
+}
