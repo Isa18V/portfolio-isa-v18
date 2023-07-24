@@ -2,23 +2,32 @@ import React from "react";
 import "../css/Navbar.css";
 import logoIsa from "../img/logoisa .png";
 
-let navbarArray = [
-  { img: logoIsa },
-  { name: "Home", link: "/" },
-  { name: "About", link: "/" },
-  { name: "Services", link: "/" },
-  { name: "Portfolio", link: "/" },
-  { name: "Contact", link: "/" },
+const navbarArrays = [
+  { name: "Home", link: "#home" },
+  { name: "About", link: "#about" },
+  { name: "Services", link: "#services" },
+  { name: "Portfolio", link: "#portfolio" },
+  { name: "Contact", link: "#contact" },
 ];
-export default function Navbar() {
+
+const Navbar = () => {
+  const navbarItems = navbarArrays.map((navbarArray, index) => (
+    <li className="nav-item" key={index}>
+      <a
+        className="nav-link active"
+        aria-current="page"
+        href={navbarArray.link}
+      >
+        {navbarArray.name}
+      </a>
+    </li>
+  ));
+
   return (
     <div className="navbarContainer">
       <nav className="navbar fixed-top navbar-expand-lg colorNavbar">
         <div className="container-fluid">
-          {/* here needs to be my image */}
-          <a className="navbar-brand" href="#">
-            <img src={navbarArray[0].img} alt="Logo" />
-          </a>
+          <img src={logoIsa} alt="Logo" />
           <button
             className="navbar-toggler"
             type="button"
@@ -31,17 +40,12 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              {/*  make forloop */}
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-            </ul>
+            <ul className="navbar-nav">{navbarItems}</ul>
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
+
+export default Navbar;
