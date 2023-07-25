@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className="navbarContainer">
       <nav className="navbar fixed-top navbar-expand-lg colorNavbar">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#home">
             <img src={logoIsa} alt="Logo" />
           </a>
           <button

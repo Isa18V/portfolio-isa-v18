@@ -1,4 +1,7 @@
 .ServicesPage {
   background-color: rgb(114, 121, 219);
-  height: calc(100vh - 80px);
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
