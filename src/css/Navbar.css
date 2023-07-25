@@ -3,12 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-img {
-  position: absolute;
-  left: 20px;
-  top: 10px;
-  max-width: 100px;
-}
+
 header {
   position: relative;
   position: fixed;
@@ -21,6 +16,12 @@ header {
   padding: 0 25px;
   transition: 0.3s;
   z-index: 100;
+}
+#logoIsa {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  max-width: 100px;
 }
 .navigation {
   display: flex;

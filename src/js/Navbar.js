@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Navbar.css";
-import logoIsa from "../img/logoisa .png";
+import logoIsa from "../img/logoisa.png";
 
 const navbarArrays = [
   { name: "Home", link: "#home" },
@@ -22,7 +22,7 @@ const Navbar = () => {
       <header className="header">
         <div className="logo">
           <a href="#home">
-            <img src={logoIsa} alt="Logo" />
+            <img id="logoIsa" src={logoIsa} alt="Logo" />
           </a>
         </div>
         <div className="navigation">

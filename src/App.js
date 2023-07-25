@@ -10,7 +10,9 @@ import ContactPage from "./js/ContactPage";
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
+      <div className="appNavbar">
+        <Navbar />
+      </div>
       <HomePage />
       <AboutPage />
       <ServicesPage />
