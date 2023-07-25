@@ -3,14 +3,16 @@ import "../css/HomePage.css";
 import isa from "../img/isa.jpg";
 
 const homePageArrays = [
-  { content: "Hello, it`s me Isabel Voican" },
-  { content: "I`m a Front-End developer" },
   {
+    title: "Hello, it`s me ",
+    name: "Isabel Voican",
+    skill: "I`m a Front-End developer",
     content:
       "I'm excited to share a bit about myself with you. Kindness, learning, and staying motivated are the core pillars of my journey. With a heart that overflows with compassion, I strive to make a positive impact in the lives of those around me.",
+    download: "Download CV",
   },
-  { content: "Download CV" },
 ];
+
 export default function HomePage() {
   return (
     <div className="HomePage" id="home">
@@ -24,19 +26,16 @@ export default function HomePage() {
       </div>
       {/* start 2 column */}
       <div className="col-md-6 homeContent">
-        <h2>Hello, it`s me</h2>
-        <h2>Isabel Voican</h2>
+        <h2>{homePageArrays[0].title}</h2>
+        <h2>{homePageArrays[0].name}</h2>
         <h3>
           I`m a <span className="beige">Front-End developer</span>
         </h3>
-        <p>
-          I'm excited to share a bit about myself with you. Kindness, learning,
-          and staying motivated are the core pillars of my journey. With a heart
-          that overflows with compassion, I strive to make a positive impact in
-          the lives of those around me.
-        </p>
+        <p>{homePageArrays[0].content}</p>
 
-        <button className="buttonHome buttonHome1">Download Cv</button>
+        <button className="buttonHome buttonHome1">
+          {homePageArrays[0].download}
+        </button>
       </div>
       {/* end row */}
     </div>
