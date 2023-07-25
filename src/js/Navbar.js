@@ -12,40 +12,24 @@ const navbarArrays = [
 
 const Navbar = () => {
   const navbarItems = navbarArrays.map((navbarArray, index) => (
-    <li className="nav-item" key={index}>
-      <a
-        className="nav-link active"
-        aria-current="page"
-        href={navbarArray.link}
-      >
-        {navbarArray.name}
-      </a>
+    <li key={index}>
+      <a href={navbarArray.link}>{navbarArray.name}</a>
     </li>
   ));
 
   return (
     <div className="navbarContainer">
-      <nav className="navbar fixed-top navbar-expand-lg colorNavbar">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#home">
+      <header className="header">
+        <div className="logo">
+          <a href="#home">
             <img src={logoIsa} alt="Logo" />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul className="navbar-nav">{navbarItems}</ul>
-          </div>
         </div>
-      </nav>
+        <div className="navigation">
+          <div className="hamburger"></div>
+          <ul className="menu">{navbarItems}</ul>
+        </div>
+      </header>
     </div>
   );
 };
