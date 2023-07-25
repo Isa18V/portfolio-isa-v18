@@ -26,8 +26,10 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <nav className="navbar fixed-top navbar-expand-lg colorNavbar">
-        <div className="container-fluid flex-row-reverse">
-          <img className="navbar-brand" src={logoIsa} alt="Logo" />
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={logoIsa} alt="Logo" />
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -40,9 +42,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <ul className="navbar-nav">{navbarItems}</ul>
-            </div>
+            <ul className="navbar-nav">{navbarItems}</ul>
           </div>
         </div>
       </nav>
