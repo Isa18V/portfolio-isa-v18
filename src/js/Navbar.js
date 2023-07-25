@@ -26,6 +26,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navigation">
+          <input type="checkbox" className="toggle-menu"></input>
           <div className="hamburger"></div>
           <ul className="menu">{navbarItems}</ul>
         </div>
