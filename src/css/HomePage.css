@@ -6,30 +6,33 @@
   align-items: center;
   justify-content: center;
 }
+
 .homeContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .homeContent p {
-  line-height: 32px;
-  font-size: 20px;
-  font-family: inder;
+  line-height: 35px;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
 }
 .homeContent h3 {
   font-size: 40px;
-  font-family: Italiana;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .homeContent h2 {
-  font-family: Italiana;
-  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-size: 55px;
   font-weight: 400;
 }
 .isaImage {
-  border-radius: 15px;
-  width: 408px;
-  height: 575px;
+  width: 350px;
+  height: auto;
+  filter: drop-shadow(20px 20px 10px rgb(187, 148, 118));
 }
 .isaImageContainer {
   display: flex;
@@ -40,16 +43,22 @@
 .beige {
   color: rgb(187, 148, 118);
 }
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
 .buttonHome {
   background-color: rgb(187, 148, 118);
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -57,5 +66,25 @@
   transition-duration: 0.4s;
 }
 .buttonHome1:hover {
-  box-shadow: 0 12px 16px 0 #8a9da7b3, 0 17px 50px 0 #8a9da76b;
+  box-shadow: 0 12px 16px 0 #a7968ab3, 0 17px 50px 0 #a7978a6b;
+}
+@media (max-width: 767px) {
+  .isaImage {
+    display: none;
+  }
+  .homeContent h3 {
+    font-size: 35px;
+  }
+  .homeContent p {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .homeContent h2 {
+    margin-bottom: 0;
+  }
+  * .buttonHome {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 4px 2px;
+  }
 }

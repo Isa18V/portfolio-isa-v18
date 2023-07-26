@@ -8,7 +8,7 @@ header {
   position: relative;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@ header {
   position: absolute;
   left: 20px;
   top: 10px;
-  max-width: 100px;
+  max-width: 120px;
 }
 .navigation {
   display: flex;
@@ -42,12 +42,12 @@ header {
 }
 .menu li a {
   color: white;
-  font-family: Inder;
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
   display: block;
   padding: 28px 25px;
   font-size: 28px;
-  line-height: 1;
+  line-height: 1.5;
   transition: 0.3s;
   font-weight: bold;
 }
@@ -139,7 +139,7 @@ header {
   }
   .menu li a,
   .menu li a:hover {
-    padding: 30px;
+    padding: 40px;
     font-size: 24px;
     box-shadow: 0 1px 0 rgb(187, 148, 118) inset;
   }
