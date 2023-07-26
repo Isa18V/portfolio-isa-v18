@@ -38,6 +38,7 @@ export default function HomePage() {
             <a
               href={homePageArrays[0].downloadUrl}
               target="_blank"
+              rel="noreferrer"
               className="buttonHome buttonHome1"
               download="Your_CV_File_Name.pdf"
             >
