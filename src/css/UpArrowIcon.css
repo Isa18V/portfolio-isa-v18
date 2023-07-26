@@ -1,0 +1,20 @@
+/* UpArrowIcon.css */
+.upArrowIconContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+}
+
+.Icon {
+  position: relative;
+}
+
+#iconUpArrowIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

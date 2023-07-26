@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./js/Navbar";
+import UpArrowIcon from "./js/UpArrowIcon";
 import HomePage from "./js/HomePage";
 import AboutPage from "./js/AboutPage";
 import ServicesPage from "./js/ServicesPage";
@@ -13,6 +14,7 @@ export default function App() {
       <div className="appNavbar">
         <Navbar />
       </div>
+      <UpArrowIcon />
       <HomePage />
       <AboutPage />
       <ServicesPage />
