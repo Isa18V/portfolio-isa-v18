@@ -12,10 +12,10 @@
   flex-direction: column;
   justify-content: center;
 }
-.homeContent p {
-  line-height: 35px;
-  font-size: 25px;
-  font-family: "Open Sans", sans-serif;
+.homeContent h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 55px;
+  font-weight: 400;
 }
 .homeContent h3 {
   font-size: 40px;
@@ -24,11 +24,12 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.homeContent h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 55px;
-  font-weight: 400;
+.homeContent p {
+  line-height: 35px;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
 }
+
 .isaImage {
   width: 350px;
   height: auto;
@@ -72,19 +73,26 @@
   .isaImage {
     display: none;
   }
+  .homeContent h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
   .homeContent h3 {
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .homeContent p {
-    line-height: 30px;
-    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 15px;
   }
-  .homeContent h2 {
-    margin-bottom: 0;
+  .buttonContainer {
+    margin-top: 0;
   }
-  * .buttonHome {
-    padding: 10px 30px;
-    font-size: 20px;
+  .buttonHome {
+    padding: 6px 15px;
+    font-size: 16px;
     margin: 4px 2px;
   }
 }
