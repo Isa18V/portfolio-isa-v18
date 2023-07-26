@@ -8,7 +8,7 @@ header {
   position: relative;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@ header {
   display: block;
   padding: 28px 25px;
   font-size: 28px;
-  line-height: 1;
+  line-height: 1.5;
   transition: 0.3s;
   font-weight: bold;
 }
@@ -115,9 +115,6 @@ header {
   box-shadow: -20px 0 40px rgba(187, 148, 118, 0.49);
 }
 @media screen and (max-width: 992px) {
-  #logoIsa {
-    max-width: 60px;
-  }
   .hamburger,
   .toggle-menu {
     display: block;
