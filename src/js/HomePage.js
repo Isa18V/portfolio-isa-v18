@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/HomePage.css";
-import isa from "../img/isa.jpeg";
+import isa from "../img/isa.png";
 
 const homePageArrays = [
   {

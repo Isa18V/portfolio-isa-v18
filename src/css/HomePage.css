@@ -36,6 +36,8 @@
   width: 350px;
   height: auto;
   filter: drop-shadow(20px 20px 10px rgb(187, 148, 118));
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 .isaImageContainer {
   display: flex;
