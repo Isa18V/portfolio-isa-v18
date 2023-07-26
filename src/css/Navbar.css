@@ -115,6 +115,9 @@ header {
   box-shadow: -20px 0 40px rgba(187, 148, 118, 0.49);
 }
 @media screen and (max-width: 992px) {
+  #logoIsa {
+    top: 40px;
+  }
   .hamburger,
   .toggle-menu {
     display: block;
