@@ -28,7 +28,7 @@ export default function HomePage() {
 
         {/* start 2 column */}
         <div className="col-md-6 homeContent">
-          <h2>{homePageArrays[0].title}</h2>
+          <h2 className="title">{homePageArrays[0].title}</h2>
           <h2>{homePageArrays[0].name}</h2>
           <h3>
             I`m a <span className="beige">Front-End developer</span>

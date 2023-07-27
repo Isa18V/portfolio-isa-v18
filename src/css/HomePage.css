@@ -1,5 +1,5 @@
 .HomePage {
-  padding: 50px;
+  padding: 70px;
   padding-top: 100px;
   min-height: 100vh;
   display: flex;
@@ -17,6 +17,9 @@
   font-size: 55px;
   font-weight: 400;
 }
+.title {
+  margin-top: 50px;
+}
 .homeContent h3 {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
@@ -25,10 +28,10 @@
   margin-bottom: 30px;
 }
 .homeContent p {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  line-height: 35px;
-  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
 }
 
