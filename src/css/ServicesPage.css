@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
 }
+.servicePageContainer {
+  margin-top: 20px;
+}
 .card-container {
   width: 300px;
   height: 315px;
@@ -65,7 +68,8 @@
   border-radius: 5px;
   pointer-events: none;
   transform: translateY(-96%);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Slower transition for smaller resolutions */
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover .content {
@@ -77,18 +81,29 @@
 }
 
 .card:hover .front-content p {
-  opacity: 0;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .col-6 {
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .card-container {
     width: 80%;
-    height: 220px;
+    height: 260px;
   }
+
   .content {
     font-size: 14px;
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .front-content:hover {
+    /* Your styles for .front-content on hover */
+    /* For example, make the font size larger and change the background color */
+    background-color: #bb9476;
+    transform: translateY(5);
+    opacity: 1;
   }
 }
 
