@@ -15,11 +15,13 @@ export default function App() {
         <Navbar />
       </div>
       <UpArrowIcon />
-      <HomePage />
-      <AboutPage />
-      <ServicesPage />
-      <PortfolioPage />
-      <ContactPage />
+      <div className="pagesContainer">
+        <HomePage />
+        <AboutPage />
+        <ServicesPage />
+        <PortfolioPage />
+        <ContactPage />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import brasov from "../img/brasov.jpg";
 
 import "../css/ServicesPage.css";
 

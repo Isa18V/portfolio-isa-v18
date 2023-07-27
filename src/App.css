@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.pagesContainer {
+  width: 80%;
+  margin: auto;
+}
 .appNavbar {
   position: relative;
 }
