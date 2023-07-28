@@ -1,13 +1,15 @@
+/* Reset some default styles */
 body {
+  margin: 0;
   font-family: "Oswald", sans-serif;
 }
-.AboutPage h2 {
-  font-size: 55px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+/* Define variables */
+:root {
+  --beige-color: rgb(187, 148, 118);
 }
+
+/* About Page styles */
 .AboutPage {
   padding-top: 100px;
   min-height: 100vh;
@@ -15,24 +17,21 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.aboutContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 20px;
-}
-.aboutContent p {
-  margin-top: 20px;
+
+.AboutPage h2 {
+  font-size: 55px;
+  font-weight: 400;
+  margin-top: 10px;
   margin-bottom: 20px;
-  line-height: 40px;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
 }
+
+/* Highlight on hover */
 .beige {
-  color: rgb(187, 148, 118);
+  color: var(--beige-color);
   position: relative;
 }
-.beige:before {
+
+.beige::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -45,32 +44,54 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.beige:hover:before {
+.beige:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
 
+/* About Content */
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.aboutContent p {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 37px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Bitmoji Image */
 .bitmojiImage {
   width: 350px;
   height: auto;
   margin-bottom: 20px;
   margin-right: 20px;
 }
+
 .bitmojiImageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Media Query */
 @media (max-width: 767px) {
   .bitmojiImage {
     display: none;
   }
+
   .AboutPage h2 {
     font-size: 40px;
     text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .aboutContent p {
     line-height: 25px;
     font-size: 13px;

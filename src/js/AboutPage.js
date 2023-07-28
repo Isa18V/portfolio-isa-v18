@@ -7,7 +7,7 @@ const aboutPageArrays = [
     title1: "About",
     title2: "Me",
     content:
-      "I'm Isabel Voican, a front-end developer who recently completed an intensive 8-month course. During this immersive program, I mastered HTML, CSS, JavaScript, and responsive design. I also gained expertise in React, building dynamic web applications. The course instilled resilience and a strong work ethic. Now, I'm eager to contribute my skills to innovative projects, creating visually  stunning and user-friendly web experiences. I prioritize continuous learning, staying ahead of trends. Equipped with a solid foundation, I'm confident in my abilities and ready for new opportunities. Let's collaborate and make a lasting impact in the ever-evolving world of  web development.",
+      "I'm Isabel Voican, a front-end developer with mastery in HTML, CSS, JavaScript, and React. I prioritize creating visually stunning, user-friendly web experiences and staying ahead of trends through continuous learning. Committed to innovation and armed with a strong work ethic, I'm ready to contribute my skills to impactful projects in the ever-evolving world of web development. Let's collaborate and make a lasting impact together!",
   },
 ];
 
