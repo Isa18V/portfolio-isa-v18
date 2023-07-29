@@ -9,7 +9,12 @@ export default function ContactPage() {
         If you have any questions or inquiries, feel free to contact me using
         the form below:
       </p>
-      <form className="contact-page__form">
+
+      <form
+        className="contact-page__form"
+        action="https://formspree.io/f/mjvqgkod"
+        method="POST"
+      >
         <label htmlFor="name" className="contact-page__label">
           Name:
         </label>
