@@ -114,27 +114,28 @@ html {
 
 /* Responsive styles */
 @media (max-width: 767px) {
-  .isaImage {
-    display: none;
-  }
   .homeContent h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .homeContent h3 {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .homeContent p {
     line-height: 1.4;
-    font-size: 0.875rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .isaImage {
+    display: none;
   }
   .buttonContainer {
     margin-top: 0;
   }
   .buttonHome {
-    padding: 0.375rem 0.75rem;
-    font-size: 0.875rem;
-    margin: 0.25rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0;
   }
 }
