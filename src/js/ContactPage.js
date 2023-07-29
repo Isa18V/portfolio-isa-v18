@@ -4,7 +4,8 @@ import "../css/ContactPage.css";
 export default function ContactPage() {
   return (
     <div className="contact-page" id="contact">
-      <h1 className="contact-page__heading">Contact Me</h1>
+      hello
+      {/* <h1 className="contact-page__heading">Contact Me</h1>
       <p className="contact-page__description">
         If you have any questions or inquiries, feel free to contact me using
         the form below:
@@ -50,7 +51,7 @@ export default function ContactPage() {
         <button type="submit" className="contact-page__button">
           Submit
         </button>
-      </form>
+      </form> */}
     </div>
   );
 }
