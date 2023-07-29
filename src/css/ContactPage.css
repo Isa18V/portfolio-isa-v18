@@ -6,7 +6,6 @@
 
 .contact-page {
   /* Use the background image */
-  background-image: url("../img/desk.jpg");
   background-color: rgb(187, 148, 118, 0.8);
   background-size: cover;
   background-position: center;
