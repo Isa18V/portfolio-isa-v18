@@ -89,9 +89,23 @@
 }
 /* Responsive styles */
 @media (max-width: 767px) {
+  .contact-page__heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
   .contact-page__description {
     margin-left: 20px;
+    font-size: 1rem;
     margin-right: 20px;
     margin-bottom: 10px;
+  }
+  .contact-page__label {
+    font-size: 1rem;
+  }
+  .contact-page__button {
+    font-size: 1rem;
+  }
+  .contact-page__form {
+    padding: 20px;
   }
 }
