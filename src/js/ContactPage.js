@@ -16,7 +16,7 @@ export default function ContactPage() {
         method="POST"
       >
         <label htmlFor="name" className="contact-page__label">
-          Name:
+          Company Name:
         </label>
         <input
           type="text"
