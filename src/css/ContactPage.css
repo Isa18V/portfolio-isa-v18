@@ -33,8 +33,11 @@
 .contact-page__description {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(187, 148, 118, 0.8);
+  color: #bb9476;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
 }
 .contact-page__form {
   display: flex;
