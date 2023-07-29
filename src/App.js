@@ -20,8 +20,8 @@ export default function App() {
         <AboutPage />
         <ServicesPage />
         <PortfolioPage />
-        <ContactPage />
       </div>
+      <ContactPage />
     </div>
   );
 }
