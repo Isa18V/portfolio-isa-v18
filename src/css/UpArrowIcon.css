@@ -18,3 +18,10 @@
   height: 40px;
   border-radius: 50%;
 }
+/* Responsive styles */
+@media (max-width: 767px) {
+  .upArrowIconContainer {
+    bottom: -8px;
+    right: -8px;
+  }
+}
