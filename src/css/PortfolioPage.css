@@ -1,3 +1,4 @@
+/* General styles for the PortfolioPage */
 .PortfolioPage {
   padding-top: 100px;
   min-height: 100vh;
@@ -6,13 +7,110 @@
   justify-content: center;
   flex-direction: column;
 }
-/* PortfolioPage.css */
-.PortfolioPage {
-  text-align: center;
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #333333;
 }
 
+/* Styles for the project list */
 .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* Styles for each ProjectCard component */
+.project-card {
+  flex: 1 0 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f5f0;
+  border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #bb9476;
+  transition: transform 0.3s ease;
+}
+
+/* Styles for the h2 element inside project cards */
+.project-card h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #333333;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.project-card h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 40px;
+  height: 2px;
+  background-color: #bb9476;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.project-card:hover h2 {
+  color: #bb9476;
+}
+
+.project-card:hover h2::after {
+  width: 60px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555555;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #f8f5f0;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #bb9476;
+  transition: background-color 0.3s ease;
+}
+
+.project-link-git {
+  margin-right: 15px;
+}
+
+.project-links a:hover {
+  background-color: #a57a55;
 }
 
 ul.row {
@@ -21,56 +119,9 @@ ul.row {
   padding: 0;
 }
 
-li.col-md-4 {
-  padding: 10px;
-}
-
-/* Styles for the ProjectCard component */
-.project-card {
-  background-color: #bb9476;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.project-card img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: 2px solid #bb9476;
-}
-
-.project-card h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: white;
-}
-
-.project-card p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.project-links {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15px;
-}
-
-.project-links a {
-  text-decoration: none;
-  color: #bb9476;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #f8f5f0;
-  transition: background-color 0.3s ease;
-}
-
-.project-links a:hover {
-  background-color: #f8f5f0;
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+  .project-list {
+    justify-content: center;
+  }
 }

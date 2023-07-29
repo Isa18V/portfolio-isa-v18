@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/PortfolioPage.css";
 
 export default function ProjectCard({ project }) {
   return (
@@ -7,10 +8,20 @@ export default function ProjectCard({ project }) {
       <h2>{project.title}</h2>
       <p>{project.description}</p>
       <div className="project-links">
-        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+        <a
+          className="project-link-git"
+          href={project.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub
         </a>
-        <a href={project.netlifyLink} target="_blank" rel="noopener noreferrer">
+        <a
+          className="project-link-netlefy"
+          href={project.netlifyLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Netlify
         </a>
       </div>
