@@ -24,6 +24,9 @@ h1 {
   margin-top: 30px;
 }
 
+.project-list li {
+  margin-bottom: 20px;
+}
 /* Styles for each ProjectCard component */
 .project-card {
   flex: 1 0 300px;
