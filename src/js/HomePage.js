@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/HomePage.css";
 import isa from "../img/isa.png";
-
 const homePageArrays = [
   {
     title: "Hello, it`s me ",
@@ -10,8 +9,7 @@ const homePageArrays = [
     content:
       "I'm excited to share a bit about myself with you. Kindness, learning, and staying motivated are the core pillars of my journey. With a heart that overflows with compassion, I strive to make a positive impact in the lives of those around me.",
     download: "Download CV",
-    downloadUrl:
-      "https://www.canva.com/design/DAFkv5M57lw/NtuWNrH_uCLwqC2jcAXN4g/edit?analyticsCorrelationId=3ec64858-5bc8-499e-ab46-ee633fb1edf0",
+    downloadUrl: "/pdfs/IsaCV.pdf",
   },
 ];
 
@@ -40,7 +38,7 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               className="buttonHome buttonHome1"
-              download="Your_CV_File_Name.pdf"
+              download="/pdfs/IsaCV.pdf"
             >
               {homePageArrays[0].download}
             </a>
