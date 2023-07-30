@@ -3,7 +3,11 @@ import "../css/PortfolioPage.css";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="project-card">
+    <div
+      className="project-card"
+      data-aos={project.AOS}
+      data-aos-duration={project.durationAOS}
+    >
       <img src={project.imageUrl} alt={project.title} />
       <h2>{project.title}</h2>
       <p>{project.description}</p>

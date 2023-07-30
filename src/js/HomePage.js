@@ -19,13 +19,21 @@ export default function HomePage() {
       {/* start row */}
       <div className="row">
         <div className="col-md-6 homeContent">
-          <div className="isaImageContainer ">
+          <div
+            className="isaImageContainer"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img className="isaImage " src={isa} alt="imgisa" />
           </div>
         </div>
 
         {/* start 2 column */}
-        <div className="col-md-6 homeContent">
+        <div
+          className="col-md-6 homeContent"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <h2 className="title">{homePageArrays[0].title}</h2>
           <h2>{homePageArrays[0].name}</h2>
           <h3>

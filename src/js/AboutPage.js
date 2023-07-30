@@ -14,16 +14,24 @@ const aboutPageArrays = [
 export default function AboutPage() {
   return (
     <div className="AboutPage" id="about">
-      <h2>
+      <h2 data-aos="fade-right" data-aos-duration="1000">
         {aboutPageArrays[0].title1}{" "}
         <span className="beige">{aboutPageArrays[0].title2}</span>
       </h2>
       <div className="row">
-        <div className="col-md-6 aboutContent">
+        <div
+          className="col-md-6 aboutContent"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <p>{aboutPageArrays[0].content}</p>
         </div>
         <div className="col-md-6 aboutContent">
-          <div className="bitmojiImageContainer">
+          <div
+            className="bitmojiImageContainer"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img className="bitmojiImage" src={bimoji} alt="isaBitmoji" />
           </div>
         </div>

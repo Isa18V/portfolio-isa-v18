@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./App.css";
 import Navbar from "./js/Navbar";
 import UpArrowIcon from "./js/UpArrowIcon";
@@ -9,6 +12,9 @@ import PortfolioPage from "./js/PortfolioPage";
 import ContactPage from "./js/ContactPage";
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <div className="App">
       <div className="appNavbar">
